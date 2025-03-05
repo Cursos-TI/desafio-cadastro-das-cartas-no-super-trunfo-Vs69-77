@@ -1,22 +1,32 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    char estado = 'A'; 
+    char cod[10] = "A03";
+    char city[10] = "Miami";
+    int populacao = 100000;
+    float area = 1432.98;
+    float pib = 586.65;
+    int point = 14;
+    float dp = (float) populacao / area;   
+    float pper = (float) pib / (populacao / 1000);
+
+
+    printf(" Carta 1: \n Estado: %c \n Codigo: %s \n Nome da cidade: %s \n Populacao: %d \n Area: %f km² \n PIB: %f bilhoes de reais \n Numero de Pontos Turisticos: %d \n Densidade Populacional: %.2f hab/km2\n O PIB per capita e de: R$%.3f \n", estado, cod, city, populacao, area, pib, point, dp, pper);
+
+    char estado2 = 'B'; 
+    char cod2[10] = "B02";
+    char city2[10] = "Phoenix";
+    int populacao2 = 90000;
+    float area2 = 954.12;
+    float pib2 = 379.24;
+    int point2 = 9;
+    float dp2 = (float) populacao2 / area2;
+    float pper2 = (float) pib2 / (populacao2 / 1000);
+
+    printf("\n Carta 2: \n Estado: %c \n Codigo: %s \n Nome da cidade: %s \n Populacao: %d \n Area: %f km² \n PIB: %f bilhoes de reais \n Numero de Pontos Turisticos: %d \n Densidade Populacional: %.2f hab/km2\n O PIB per capita e de: R$%.3f \n", estado2, cod2, city2, populacao2, area2, pib2, point2, dp2, pper2);
+    
+        return 0;
+
 }
